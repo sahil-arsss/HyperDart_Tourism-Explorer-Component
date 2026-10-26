@@ -43,6 +43,6 @@ export default {
 		category: 'travel',
 		description: 'Explore top tourist attractions, landmarks, and day plans for any destination.'
 	},
-	github: "https://github.com/hyperdart/tourismexplorer",
-	demovideo: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	github: "https://github.com/sahil-arsss/HyperDart_Tourism-Explorer-Component",
+	demovideo: "https://youtu.be/O39imftFzY0"
 }
