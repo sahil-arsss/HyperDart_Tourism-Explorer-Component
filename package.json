@@ -1,0 +1,52 @@
+{
+  "source": "src/frontend/index.jsx",
+  "main": "dist/index.umd.js",
+  "module": "dist/frontend/index.modern.js",
+  "private": false,
+  "type": "module",
+  "devDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@hyperdart/backend": "^2.0.2",
+    "@hyperdart/sandbox": "^2.0.0",
+    "@mui/icons-material": "^6.0.0",
+    "@mui/material": "^6.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "^6.26.0",
+    "vite": "^6.0.11",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "vite-plugin-css-injected-by-js": "^3.5.2"
+  },
+  "dependencies": {
+    "@hyperdart/frontend": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^6.0.0",
+    "@mui/material": "^6.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "server": "node scripts/local-backend.js",
+    "build": "vite build && node scripts/copy-backend.js",
+    "validate": "node scripts/validate-publish.js",
+    "prepublishOnly": "node scripts/validate-publish.js"
+  },
+  "files": [
+    "hyperdart.config.js",
+    "dist",
+    "resource.json"
+  ],
+  "publishConfig": {
+    "registry": "https://dev-registry.hyperdart.com"
+  },
+  "name": "@hyperdart/tourismexplorer",
+  "version": "1.0.0",
+  "description": "hyperDart Tourism Explorer Component"
+}
